@@ -10,13 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/Duozoid/frontend-project-lvl1.git"
   },
-  "author": "",
+  "author": "ZoyaA",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Duozoid/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/Duozoid/frontend-project-lvl1#readme",
   "type": "module",
+  "homepage": "https://github.com/Duozoid/frontend-project-lvl1#readme",
   "bin": {
     "brain-games": "bin/brain-games.js"
   }
