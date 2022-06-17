@@ -1,3 +1,10 @@
+### Brain-evеn game
+
+Run the command: `brain-even`
+
+[![asciicast]( https://asciinema.org/a/sEfLUTum6HVDx4hsTpebFxZ7s)
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Duozoid/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Duozoid/frontend-project-lvl1/actions)
 
