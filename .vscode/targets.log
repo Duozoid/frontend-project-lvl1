@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun 17 18:08:41 2022
+# Make data base, printed on Fri Jun 17 18:12:14 2022
 
 # Variables
 
@@ -21,7 +21,7 @@ USERPROFILE = C:\Users\���
 # environment
 LOCALAPPDATA = C:\Users\���\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-dad6523c-b6fe-4ac6-82e6-56c35890babc-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-7c63c805-9977-4c0e-a78c-60476f40fb8f-sock
 # environment
 VSCODE_CWD = C:\Users\���\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -37,7 +37,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6712_QASDKIFPVWQDAMUW
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18512_GRIIPNQJBASDZNBR
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -91,7 +91,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 6712
+VSCODE_PID = 18512
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # environment
@@ -294,7 +294,8 @@ install:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 2):
+#  recipe to execute (from 'Makefile', line  
+2):
 			npm ci
 
 # files hash-table stats:
@@ -311,6 +312,6 @@ install:
 # strcache performance: lookups = 32 / hit rate = 31%
 # hash-table stats:
 # Load=22/8192=0%, Rehash=0, Collisions=0/32=0%
-# Finished Make data base on Fri Jun 17 18:08:41 2022
+# Finished Make data base on Fri Jun 17 18:12:14 2022
 
  

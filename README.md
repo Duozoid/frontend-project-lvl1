@@ -1,8 +1,8 @@
 ### Brain-evеn game
 
-Run the command: `brain-even`
+Command: `brain-even`
 
-[![asciicast]( https://asciinema.org/a/sEfLUTum6HVDx4hsTpebFxZ7s)
+[video]( https://asciinema.org/a/sEfLUTum6HVDx4hsTpebFxZ7s)
 
 
 ### Hexlet tests and linter status:
