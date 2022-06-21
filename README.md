@@ -7,7 +7,8 @@ Command: `brain-even`
 ### Brain-calc game
 
 Command: `brain-calc`
-[video-example] (https://asciinema.org/a/ErXYTuUURvm4p32xxkMCoidDl)
+
+[video-example]( https://asciinema.org/a/ErXYTuUURvm4p32xxkMCoidDl)
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Duozoid/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Duozoid/frontend-project-lvl1/actions)
