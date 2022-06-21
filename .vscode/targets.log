@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun 17 18:12:14 2022
+# Make data base, printed on Tue Jun 21 12:43:47 2022
 
 # Variables
 
@@ -21,7 +21,7 @@ USERPROFILE = C:\Users\���
 # environment
 LOCALAPPDATA = C:\Users\���\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-7c63c805-9977-4c0e-a78c-60476f40fb8f-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-62b0d964-3513-4bcc-bb97-f3a58f4008c6-sock
 # environment
 VSCODE_CWD = C:\Users\���\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -37,7 +37,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18512_GRIIPNQJBASDZNBR
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20396_JJGJYNSBXCYVGIOS
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -91,7 +91,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 18512
+VSCODE_PID = 20396
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # environment
@@ -225,7 +225,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/���/frontend-project-lvl1, mtime 1655478521): 13 files, no impossibilities.
+# . (key c:/Users/���/frontend-project-lvl1, mtime 1655802502): 13 files, no impossibilities.
 
 # 13 files, no impossibilities in 1 directories.
 
@@ -246,20 +246,20 @@ lint:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
+#  recipe to execute (from 'Makefile', line 17):
 		 npx eslint .
 
 make:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
+#  recipe to execute (from 'Makefile', line 17):
 		 npx eslint .
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-17 10:48:14
+#  Last modified 2022-06-21 12:41:02
 #  File has been updated.
 #  Successfully updated.
 
@@ -280,7 +280,7 @@ publish:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 11):
+#  recipe to execute (from 'Makefile', line 14):
 		npm publish --dry-run
 
 brain-even:
@@ -294,24 +294,30 @@ install:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line  
-2):
+#  recipe to execute (from 'Makefile', line 2):
 			npm ci
 
+brain-calc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 11):
+			node bin/brain-calc.js
+
 # files hash-table stats:
-# Load=10/1024=1%, Rehash=0, Collisions=0/20=0%
+# Load=11/1024=1%, Rehash=0, Collisions=0/21=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 185 B / avg = 8 B
-# current buf: size = 8174 B / used = 185 B / count = 22 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 196 B / avg = 8 B
+# current buf: size = 8174 B / used = 196 B / count = 23 / avg = 8 B
 
-# strcache performance: lookups = 32 / hit rate = 31%
+# strcache performance: lookups = 34 / hit rate = 32%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=0/32=0%
-# Finished Make data base on Fri Jun 17 18:12:14 2022
+# Load=23/8192=0%, Rehash=0, Collisions=0/34=0%
+# Finished Make data base on Tue Jun 21 12:43:47 2022
 
  
