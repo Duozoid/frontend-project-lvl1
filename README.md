@@ -10,6 +10,12 @@ Command: `brain-calc`
 
 [video-example]( https://asciinema.org/a/ErXYTuUURvm4p32xxkMCoidDl)
 
+### Brain-gcd game
+
+Command: `brain-gcd`
+
+[video-example]( https://asciinema.org/connect/e7ecde9d-fc9f-4ed0-ab33-1187515d6753)
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Duozoid/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Duozoid/frontend-project-lvl1/actions)
 
