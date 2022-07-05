@@ -16,6 +16,14 @@ Command: `brain-gcd`
 
 [video-example]( https://asciinema.org/connect/e7ecde9d-fc9f-4ed0-ab33-1187515d6753)
 
+
+### Brain-progression game
+
+Command: `brain-progression`
+
+[video-example]( https://asciinema.org/a/VoCDo50Erj19v8qtpyahiLXca)
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Duozoid/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Duozoid/frontend-project-lvl1/actions)
 
