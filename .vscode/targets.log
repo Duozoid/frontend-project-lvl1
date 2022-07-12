@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jul 12 15:13:44 2022
+# Make data base, printed on Tue Jul 12 15:38:43 2022
 
 # Variables
 
@@ -35,7 +35,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_3476_AINXHJILPSCXNJYT
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_15644_EMKVXNGOHPEQNCWT
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -67,7 +67,8 @@ CURDIR := c:/Users/���/frontend-project-lvl1
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
-*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+*D = $(patsubst 
+ %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
 PROGRAMFILES = C:\Program Files (x86)
 # environment
@@ -83,7 +84,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 3476
+VSCODE_PID = 15644
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # environment
@@ -93,7 +94,7 @@ ONLINESERVICES = Online Services
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"4165c719fdf7a78444ed970b4565033b.ru","_translationsConfigFile":"C:\\Users\\���\\AppData\\Roaming\\Code\\clp\\4165c719fdf7a78444ed970b4565033b.ru\\tcf.json","_cacheRoot":"C:\\Users\\���\\AppData\\Roaming\\Code\\clp\\4165c719fdf7a78444ed970b4565033b.ru","_resolvedLanguagePackCoreLocation":"C:\\Users\\���\\AppData\\Roaming\\Code\\clp\\4165c719fdf7a78444ed970b4565033b.ru\\92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9","_corruptedFile":"C:\\Users\\���\\AppData\\Roaming\\Code\\clp\\4165c719fdf7a78444ed970b4565033b.ru\\corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"0c710195abefcb157427091a54303bfc.ru","_translationsConfigFile":"C:\\Users\\���\\AppData\\Roaming\\Code\\clp\\0c710195abefcb157427091a54303bfc.ru\\tcf.json","_cacheRoot":"C:\\Users\\���\\AppData\\Roaming\\Code\\clp\\0c710195abefcb157427091a54303bfc.ru","_resolvedLanguagePackCoreLocation":"C:\\Users\\���\\AppData\\Roaming\\Code\\clp\\0c710195abefcb157427091a54303bfc.ru\\92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9","_corruptedFile":"C:\\Users\\���\\AppData\\Roaming\\Code\\clp\\0c710195abefcb157427091a54303bfc.ru\\corrupted.info","_languagePackSupport":true}
 # environment
 ONEDRIVECONSUMER = C:\Users\���\OneDrive
 # default
@@ -154,8 +155,6 @@ USERDOMAIN = LAPTOP-G0S6LHT0
 GNUMAKEFLAGS := 
 # environment
 OS = Windows_NT
-# environment
-__COMPAT_LAYER = DetectorsAppHealth
 # makefile
 .DEFAULT_GOAL := install
 # default
@@ -209,7 +208,7 @@ PROCESSOR_REVISION = 8c01
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=11/125=9%
+# Load=97/1024=9%, Rehash=0, Collisions=11/124=9%
 
 # Pattern-specific Variable Values
 
@@ -238,26 +237,25 @@ lint:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 23):
+#  recipe to execute (from 'Makefile', line 26):
 		 npx eslint .
 
 make:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 23):
+#  recipe to execute (from 'Makefile', line 26):
 		 npx eslint .
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-05 12:46:46
+#  Last modified 2022-07-12 15:26:46
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
-.DEF 
-AULT:
+.DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -273,7 +271,7 @@ publish:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 20):
+#  recipe to execute (from 'Makefile', line 23):
 		npm publish --dry-run
 
 brain-progression:
@@ -282,6 +280,13 @@ brain-progression:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 17):
 			node bin/brain-progression.js
+
+brain-prime:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+			node bin/brain-prime.js
 
 brain-even:
 #  Implicit rule search has not been done.
@@ -313,19 +318,19 @@ brain-calc:
 			node bin/brain-calc.js
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/23=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/24=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 25 / storage = 224 B / avg = 8 B
-# current buf: size = 8174 B / used = 224 B / count = 25 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 236 B / avg = 9 B
+# current buf: size = 8174 B / used = 236 B / count = 26 / avg = 9 B
 
-# strcache performance: lookups = 38 / hit rate = 34%
+# strcache performance: lookups = 40 / hit rate = 35%
 # hash-table stats:
-# Load=25/8192=0%, Rehash=0, Collisions=0/38=0%
-# Finished Make data base on Tue Jul 12 15:13:44 2022
+# Load=26/8192=0%, Rehash=0, Collisions=0/40=0%
+# Finished Make data base on Tue Jul 12 15:38:43 2022
 
  

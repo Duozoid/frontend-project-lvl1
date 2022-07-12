@@ -26,7 +26,8 @@ Command: `brain-progression`
 ### Brain-prime 
 
 Command: `brain-prime`
-[video-example] ( https://asciinema.org/a/KS0V0Rn8d8AdMd5GxcxciXw9b)
+[video-example]( https://asciinema.org/a/KS0V0Rn8d8AdMd5GxcxciXw9b)
+
 
 
 ### Hexlet tests and linter status:
