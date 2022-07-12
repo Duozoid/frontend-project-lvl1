@@ -2,13 +2,13 @@
 
 Command: `brain-even`
 
-[video-example]( https://asciinema.org/a/sEfLUTum6HVDx4hsTpebFxZ7s)
+[video-example]( https://asciinema.org/a/KS0V0Rn8d8AdMd5GxcxciXw9b)
 
 ### Brain-calc game
 
 Command: `brain-calc`
 
-[video-example]( https://asciinema.org/a/ErXYTuUURvm4p32xxkMCoidDl)
+[video-example]( https://asciinema.org/a/dX0FlHmnkkHK9ongUCtT3LUz4)
 
 ### Brain-gcd game
 
@@ -22,6 +22,11 @@ Command: `brain-gcd`
 Command: `brain-progression`
 
 [video-example]( https://asciinema.org/a/VoCDo50Erj19v8qtpyahiLXca)
+
+### Brain-prime 
+
+Command: `brain-prime`
+[video-example] ( https://asciinema.org/a/KS0V0Rn8d8AdMd5GxcxciXw9b)
 
 
 ### Hexlet tests and linter status:
