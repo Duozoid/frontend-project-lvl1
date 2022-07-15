@@ -1,2 +1,1 @@
-const getRandomNumber = (start, end) => (Math.floor(Math.random() * (end - start)) + start);
-export default getRandomNumber;
+export default (start, end) => (Math.floor(Math.random() * (end - start + 1)) + start);

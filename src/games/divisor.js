@@ -1,5 +1,5 @@
-import playGame from '..//src/game-helper.js';
-import getRandomNumber from '..//src//getRandomNumber.js';
+import playGame from '../game-helper.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const getGreatestCommonDivisor = (num1, num2) => {
     const maxNum = num1 > num2 ? num1 : num2;
