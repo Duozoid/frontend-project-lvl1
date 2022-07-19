@@ -1,39 +1,29 @@
 import playGame from '../game-helper.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-const generateQuestion = () => {
-    const operators = ['+', '-', '*'];
-  
-    const minNumber = 1;
-    const maxNumber = 50;
-    const num1 = getRandomNumber(minNumber, maxNumber);
-    const num2 = getRandomNumber(minNumber, maxNumber);
-    const operationIndex = getRandomNumber(0, operators.length - 1);
-  
-    const question = `${num1} ${operators[operationIndex]} ${num2}`;
-    let result;
-    switch (operationIndex) {
-      case 0:
-        result = num1 + num2;
-        break;
-      case 1:
-        result = num1 - num2;
-        break;
-      case 2:
-        result = num1 * num2;
-        break;
-      default:
-        break;
-    }
-    const answer = String(result);
-  
-    return [question, answer];
-  };
-  
-  const brainCalcGame = () => {
-    const roundsCount = 3;
-    const rulesMessage = 'What is the result of the expression?';
-    playGame(roundsCount, rulesMessage, generateQuestion);
-  };
+const makeExample = (firstNumber, secondNumber, operator) => {
+  switch (operator) {
+    case '+':
+      return [`${firstNumber} + ${secondNumber}`, String(firstNumber + secondNumber)];
+    case '-':
+      return [`${firstNumber} - ${secondNumber}`, String(firstNumber - secondNumber)];
+    case '*':
+      return [`${firstNumber} * ${secondNumber}`, String(firstNumber * secondNumber)];
+    default:
+      return console.error(`Operator ${operator} doesn't supported`);
+  }
+};
 
-export default brainCalcGame;
+const generateBrainCalcQuestion = () => {
+  const firstNumber = getRandomNumber(0, 20);
+  const secondNumber = getRandomNumber(0, 20);
+  const operators = ['+', '-', '*'];
+  const operator = operators[getRandomNumber(0, 3)];
+  return makeExample(firstNumber, secondNumber, operator);
+};
+
+const rulesMessage = 'What is the result of the expression?';
+
+const brainCalc = () => playGame(rulesMessage, generateBrainCalcQuestion);
+
+export default brainCalc;

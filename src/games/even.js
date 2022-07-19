@@ -1,19 +1,14 @@
 import playGame from '../game-helper.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-  const isEven = (number) => (number % 2 === 0);
+const generateBrainEvenQuestion = () => {
+  const question = getRandomNumber(1, 30);
+  return [question, question % 2 === 0 ? 'yes' : 'no'];
+};
 
-  const generateProgressionQuestion = () => {
-    const question = getRandomNumber(1, 30);
-    const answer = isEven(question) ? 'yes' : 'no';
-    return [question, answer];
-  };
-  
-  const brainEven = () => {
-    const rulesMessage = 'Answer "yes" if given number is even. Otherwise answer "no".';
-    const roundsCount = 3;
-    playGame(roundsCount, rulesMessage, generateProgressionQuestion)
-    };
+const evenQuestion = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-    export default brainEven;
+const brainEven = () => playGame(evenQuestion, generateBrainEvenQuestion);
+
+export default brainEven;
 
