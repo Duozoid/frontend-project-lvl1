@@ -1,19 +1,21 @@
-const getDomainInfo = (path) => {
+const fill = (obj1, word, obj2) => {
+  let obj3 = _.pick(obj2, [word]);
+  // const items = Object.entries(obj2);
+  // for (const key in items) {
+    //if (key === word) { 
+  Object.assign(obj1, obj3);
+  
+return obj1;
+}
 
-    if (path.startsWith('yandex.ru')) {
-      return {scheme: 'http', name: 'yandex.ru'}
-    };
-    const schemeParts = path.split(':');
-    const scheme = schemeParts[0];
-  
-    const parts = path.split('//');
-    const name = parts[1];
-  
-    // В значения вместо переменных подставятся нужные значения
-    const info = { scheme, name };
-  
-    return info;
-  }
+const company = {
+  name: null,
+  state: 'moderating',
+};
+ 
+const data = {
+  name: 'Hexlet',
+  state: 'published',
+};
 
-  const exapmle = 'https://hexlet.io';
-  console.log(getDomainInfo(exapmle));
+console.log(fill(company, ['name'], data));

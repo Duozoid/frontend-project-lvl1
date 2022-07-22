@@ -1,4 +1,4 @@
-import playGame from '../game-helper.js';
+import playGame from '../game-engine.js';
 import getRandomNumber from '../getRandomNumber.js';
 
 const getGreatestCommonDivisor = (num1, num2) => {
