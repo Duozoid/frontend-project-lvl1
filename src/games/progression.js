@@ -1,6 +1,8 @@
 import playGame from '../game-helper.js';
 import getRandomNumber from '../getRandomNumber.js';
 
+const rulesMessage = 'What number is missing in the progression?';
+
 const generateProgression = (startNumber, stepCount, progressionLength) => {
     const progression = [];
     progression.push(startNumber);
@@ -24,7 +26,6 @@ const generateProgression = (startNumber, stepCount, progressionLength) => {
   
 
   const brainProgression = () => {
-  const rulesMessage = 'What number is missing in the progression?';
   const roundsCount = 3;
   playGame(roundsCount, rulesMessage, generateProgressionQuestion)
   };

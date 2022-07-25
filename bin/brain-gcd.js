@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import brainDivisorGame from '../src/games/divisor.js';
+import brainDivisorGame from '../src/games/gcd.js';
 
 brainDivisorGame();
