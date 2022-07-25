@@ -7,7 +7,7 @@ const rulesMessage = 'What is the result of the expression?';
 const calculate = (firstNumber, secondNumber, operator) => {
   switch (operator) {
     case '+':
-      return [`${firstNumber} + ${secondNumber}`, String(firstNumber + secondNumber)];
+      return ,[`${firstNumber} + ${secondNumber}`, String(firstNumber + secondNumber)];
     case '-':
       return [`${firstNumber} - ${secondNumber}`, String(firstNumber - secondNumber)];
     case '*':
