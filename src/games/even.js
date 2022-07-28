@@ -1,7 +1,7 @@
 import playGame, { roundCount } from '../game-engine.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-const message = 'Answer "yes" if the number is even, otherwise answer "no".';
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (num) => num % 2 === 0;
 
@@ -12,7 +12,7 @@ const brainEven = () => {
     const answer = isEven(question) ? 'yes' : 'no';
     forGame.push([question, answer]);
   }
-  playGame(forGame, message);
+  playGame(forGame, rules);
 };
 export default brainEven;
 

@@ -1,7 +1,7 @@
-import playGame from '../game-helper.js';
+import playGame, { roundCount } from '../game-engine.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-const rulesMessage = 'What number is missing in the progression?';
+const rules = 'What number is missing in the progression?';
 
 const generateProgression = (startNumber, stepCount, progressionLength) => {
     const progression = [];
@@ -18,17 +18,19 @@ const generateProgression = (startNumber, stepCount, progressionLength) => {
       getRandomNumber(1, 15),
       getRandomNumber(5, 11),
     );
-    const correctAnswer = progression[getRandomNumber(0, progression.length - 1)];
-    progression[progression.indexOf(correctAnswer)] = '..';
+    const answer = String(progression[getRandomNumber(0, progression.length - 1)]);
+    progression[progression.indexOf(answer)] = '..';
     const question = progression.join(' ');
-    return [question, String(correctAnswer)];
+    return [question, answer];
   };
   
 
   const brainProgression = () => {
-  const roundsCount = 3;
-  playGame(roundsCount, rulesMessage, generateProgressionQuestion)
-  };
-  
+    const rounds = [] 
+    for (let i = 0; i < roundCount; i++) { 
+      rounds.push(generateProgressionQuestion()) 
+    } 
+    playGame(rounds, rules);
+    }  
   export default brainProgression;
   
