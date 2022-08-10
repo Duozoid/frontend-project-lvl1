@@ -1,4 +1,4 @@
-import playGame, { roundCount } from '../game-engine.js';
+import playGame, { roundsCount } from '../game-engine.js';
 import getRandomNumber from '../getRandomNumber.js';
 
 const operators = ['+', '-', '*']; 
@@ -29,7 +29,7 @@ const generateRound = () => {
 
 const brainCalc = () => { 
 const rounds = [] 
-for (let i = 0; i < roundCount; i++) { 
+for (let i = 0; i < roundsCount; i++) { 
   rounds.push(generateRound()) 
 } 
 playGame(rounds, rules);

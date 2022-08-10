@@ -1,4 +1,4 @@
-import playGame, { roundCount } from '../game-engine.js';
+import playGame, { roundsCount } from '../game-engine.js';
 import getRandomNumber from '../getRandomNumber.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -21,7 +21,7 @@ const isPrime = (number) =>{
   
 
   const brainPrime = () => {
-  playGame(roundCount, rules, generateProgressionQuestion)
+  playGame(roundsCount, rules, generateProgressionQuestion)
   };
   
   export default brainPrime;
