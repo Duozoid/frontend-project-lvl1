@@ -20,7 +20,7 @@ const generateRound = () => {
 
 const brainPrime = () => {
   const rounds = [];
-  for (let i = 1; i < roundsCount; i += 1) {
+  for (let i = 0; i < roundsCount; i += 1) {
     rounds.push(generateRound());
   }
   playGame(rounds, rules);
