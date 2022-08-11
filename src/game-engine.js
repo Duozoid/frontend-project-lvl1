@@ -22,4 +22,3 @@ const playGame = (rounds, rules) => {
   console.log(`Congratulations, ${name}!`);
 };
 export default playGame;
-
