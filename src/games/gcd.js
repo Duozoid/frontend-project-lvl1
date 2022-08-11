@@ -5,15 +5,20 @@ const rules = 'Find the greatest common divisor of given numbers.';
 
 const findGCD = (x, y) => (x !== 0 ? findGCD(y % x, x) : y);
 
-const brainDivisorGame = () => {
-  const rounds = [];
-  for (let i = 0; i < roundsCount; i += 1) {
-    const firstNumber = getRandomNumber(2, 20); 
-    const secondNumber = getRandomNumber(2, 10);
-    const question = `${firstNumber} ${secondNumber}`; 
-    const answer = findGCD(firstNumber, secondNumber);
-    rounds.push([question, String(answer)]);
-  }
-  playGame(rounds, rules);
+const generateRound = () => {
+  const firstNumber = getRandomNumber(1, 50); 
+  const secondNumber = getRandomNumber(1, 50);
+  const question = `${firstNumber} ${secondNumber}`; 
+  const answer = findGCD(firstNumber, secondNumber);
+  return [question, String(answer)]
 };
-export default brainDivisorGame;
+
+const brainGCD = () => { 
+  const rounds = [] 
+  for (let i = 0; i < roundsCount; i += 1) { 
+    rounds.push(generateRound()) 
+  } 
+  playGame(rounds, rules);
+  }
+  
+  export default brainGCD;

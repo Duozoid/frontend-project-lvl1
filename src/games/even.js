@@ -11,7 +11,7 @@ const generateRound = () => {
   return [question, answer]
 }
 
-const brainCalc = () => { 
+const brainEven = () => { 
   const rounds = [] 
   for (let i = 0; i < roundsCount; i += 1) { 
     rounds.push(generateRound()) 
@@ -19,4 +19,4 @@ const brainCalc = () => {
   playGame(rounds, rules);
   }
   
-  export default brainCalc;
+  export default brainEven;

@@ -3,34 +3,30 @@ import getRandomNumber from '../getRandomNumber.js';
 
 const rules = 'What number is missing in the progression?';
 
-const generateProgression = (startNumber, roundsCount, progressionLength) => {
-    const progression = [];
-    progression.push(startNumber);
-    while (progression.length < progressionLength) {
-      progression.push(progression[progression.length - 1] + roundsCount);
-    }
-    return progression;
-  };
-  
-  const generateProgressionQuestion = () => {
-    const progression = generateProgression(
-      getRandomNumber(0, 30),
-      getRandomNumber(1, 15),
-      getRandomNumber(5, 11),
-    );
-    const answer = String(progression[getRandomNumber(0, progression.length - 1)]);
-    progression[progression.indexOf(answer)] = '..';
-    const question = progression.join(' ');
-    return [question, answer];
-  };
-  
+const generateProgression = () => {
+  const progression = [];
+  const startNumber = getRandomNumber(1, 20);
+  const stepCount = getRandomNumber(2, 6);
+  const progressionLength = getRandomNumber(5, 11);
+  for (let i = startNumber; progression.length < progressionLength; i += stepCount) {
+    progression.push(i);
+  }
+  const randomIndex = getRandomNumber(0, progression.length);
 
-  const brainProgression = () => {
-    const rounds = [] 
-    for (let i = 0; i < roundsCount; i++) { 
-      rounds.push(generateProgressionQuestion()) 
-    } 
-    playGame(rounds, rules);
-    }  
-  export default brainProgression;
-  
+  const symbol = '..';
+  const hiddenElement = progression[randomIndex];
+  progression[randomIndex] = symbol;
+  const question = `${progression.join(' ')}`;
+  const answer = String(hiddenElement);
+  return [question, answer];
+};
+
+const brainProgression = () => {
+  const rounds = [];
+  for (let i = 1; rounds.length < roundsCount; i += 1) {
+    rounds.push(generateProgression());
+  }
+  playGame(rounds, rules);
+};
+
+export default brainProgression;
