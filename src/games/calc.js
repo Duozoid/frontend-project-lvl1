@@ -13,7 +13,7 @@ const calculate = (operation, firstNumber, secondNumber) => {
     case '*':
       return firstNumber * secondNumber;
     default:
-      throw new Error(`Operator does not supported`);
+      throw new Error('Operator does not supported');
   }
 };
 
