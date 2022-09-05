@@ -13,7 +13,7 @@ const calculate = (operation, firstNumber, secondNumber) => {
     case '*':
       return firstNumber * secondNumber;
     default:
-      throw new Error('Operator does not supported');
+      throw new Error('Operator - ${operation} does not supported');
   }
 };
 
@@ -26,7 +26,7 @@ const generateRound = () => {
   return [task, answer];
 };
 
-const brainCalc = () => {
+const runBrainCalcGame  = () => {
   const rounds = [];
   for (let i = 0; i < roundsCount; i += 1) {
     rounds.push(generateRound());
@@ -34,4 +34,4 @@ const brainCalc = () => {
   playGame(rounds, rules);
 };
 
-export default brainCalc;
+export default runBrainCalcGame ;

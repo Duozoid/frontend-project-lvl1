@@ -9,11 +9,11 @@ const generateRound = () => {
   const firstNumber = getRandomNumber(1, 50);
   const secondNumber = getRandomNumber(1, 50);
   const question = `${firstNumber} ${secondNumber}`;
-  const answer = findGCD(firstNumber, secondNumber);
-  return [question, String(answer)];
+  const answer = String(findGCD(firstNumber, secondNumber));
+  return [question, answer];
 };
 
-const brainGCD = () => {
+const runBrainGCDGame = () => {
   const rounds = [];
   for (let i = 0; i < roundsCount; i += 1) {
     rounds.push(generateRound());
@@ -21,4 +21,4 @@ const brainGCD = () => {
   playGame(rounds, rules);
 };
 
-export default brainGCD;
+export default runBrainGCDGame;

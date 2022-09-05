@@ -18,7 +18,7 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const brainPrime = () => {
+const runBrainPrimeGame = () => {
   const rounds = [];
   for (let i = 0; i < roundsCount; i += 1) {
     rounds.push(generateRound());
@@ -26,4 +26,4 @@ const brainPrime = () => {
   playGame(rounds, rules);
 };
 
-export default brainPrime;
+export default runBrainPrimeGame;
