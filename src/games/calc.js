@@ -22,8 +22,8 @@ const generateRound = () => {
   const secondNumber = getRandomNumber(1, 10);
   const operation = operators[getRandomNumber(0, operators.length - 1)];
   const answer = String(calculate(operation, firstNumber, secondNumber));
-  const task = `${firstNumber} ${operation} ${secondNumber}`;
-  return [task, answer];
+  const question = `${firstNumber} ${operation} ${secondNumber}`;
+  return [question, answer];
 };
 
 const runBrainCalcGame  = () => {
@@ -34,4 +34,4 @@ const runBrainCalcGame  = () => {
   playGame(rounds, rules);
 };
 
-export default runBrainCalcGame ;
+export default runBrainCalcGame;
