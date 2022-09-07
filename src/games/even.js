@@ -11,7 +11,7 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const runBrainEvenGame  = () => {
+const runBrainEvenGame = () => {
   const rounds = [];
   for (let i = 0; i < roundsCount; i += 1) {
     rounds.push(generateRound());

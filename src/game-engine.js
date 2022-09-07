@@ -12,7 +12,7 @@ const playGame = (rounds, rules) => {
     const [question, answer] = rounds[i];
 
     console.log(`Question: ${question}`);
-    const userAnswer = readLineSync.question('Your answer: '); 
+    const userAnswer = readLineSync.question('Your answer: ');
     if (answer !== userAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${name}!`);
       return;
